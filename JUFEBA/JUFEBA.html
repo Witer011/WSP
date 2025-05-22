@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jufeba</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <style>
+      :root {
+        --color1 : rgb(38, 38, 38);
+        --color2 : rgb(190, 240, 98);
+        --color3 : rgba(190, 240, 98, 0.3);
+      }
+      /* var(--color1) var(--color2) */
+
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background: linear-gradient(var(--color2), var(--color1) 180px);
+        color: white;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+      }
+      header img {
+        width: 200px;
+      }
+      header a {
+        padding: 20px;
+
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+
+        background-color: var(--color1);
+        border-radius: 50%;
+
+        transition: 0.3s;
+      }
+      header a:hover {
+        filter: drop-shadow(0 0 10px white)
+      }
+      header a:active {
+        filter: drop-shadow(0 0 50px white)
+      }
+      header * {
+        margin: 5px 15px;
+      }
+
+      /*.container {
+        margin:  0 200px 0 30px;
+      }*/
+
+      section {
+        margin: 0 30px 50px 30px;
+        transition: 0.5s;
+      }
+      section h2 {
+        font-size: 35px;
+        margin-bottom: 5px;
+        text-decoration: underline;
+      }
+
+      .row {
+        display: flex;
+      }
+
+      .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .swiper-button-next, .swiper-button-prev {
+        padding: 8px;
+
+        color: var(--color2);
+        background-color: var(--color3);
+      }
+      .swiper-button-next {
+        border-radius: 0 10px 0;
+      }
+      .swiper-button-prev {
+        border-radius: 10px 0 10px;
+      }
+      .swiper-slide span {
+        font-size: 25px;
+      }
+      .swiper-slide img {
+        max-width: 100%;
+        border-radius: 30px;
+        filter: drop-shadow(0px 0px 2px white)
+      }
+      .swiper3-row {
+
+        width: 33%;
+        float: left;
+      }
+      .swiper3-row h3 {
+        margin: 0 5px;
+        padding: 5px 10px;
+        border-radius: 20px 20px 0 0;
+        font-size: 30px;
+        background-color: var(--color3);
+      }
+      #products {
+        margin-bottom: 620px;
+      }
+
+      .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 30px;
+      }
+
+      .some-link svg path {
+        fill: white;
+      }
+    </style>
+  </head>
+  <body>
+      <header>
+        <img src="./IMG/logo.png">
+        <a href="#about_us" id="about_us_btn">About us</a>
+        <a href="#requirements" id="requirements_btn">Terms & Requirements</a>
+        <a href="#products" id="products_btn">Products</a>
+        <a href="#contact" id="contact_btn">Contact</a>
+      </header>
+
+      <div class="container">
+
+        <div class="row">
+
+          <section name="about_us" id="about_us">
+            <h2>About us</h2>
+            <p>
+              <strong>Jufeba Maschinenbau GmbH</strong> is a German company specializing in the design and manufacturing of advanced machinery and equipment for various industries. With decades of experience, we are known for delivering tailored engineering solutions—from small-scale custom machines to large, complex industrial systems.
+            </p>
+            <p>
+              Our strength lies in combining innovation with precision. We support our clients throughout the entire project lifecycle—from concept and development to implementation, maintenance, and repair. Whether it’s a unique one-off machine or a fully automated production system, we provide the technical expertise and customer-focused service to bring your ideas to life.
+            </p>
+          
+            <h3>Our Products</h3>
+            <ul>
+              <li><strong>Cutting Machines:</strong> Precision machines for slicing food products and other materials.</li>
+              <li><strong>Custom-Built Machinery:</strong> Tailor-made solutions designed to meet specific customer requirements.</li>
+              <li><strong>Automation Systems:</strong> Efficient systems for optimizing production processes through automation.</li>
+              <li><strong>Bakery Equipment:</strong> Industry-leading deep fryers, chocolate tempering machines, cream cookers, pretzel baking machines, and more. Our full range can be found in our dedicated bakery catalog.</li>
+            </ul>
+          
+            <h3>Our Services</h3>
+            <ul>
+              <li>Technical consulting and project management</li>
+              <li>Custom engineering and prototyping</li>
+              <li>Maintenance and repair services</li>
+            </ul>
+          
+            <p>
+              <strong>Jufeba stands for precision, innovation, and trust.</strong> Explore how our engineering solutions can elevate your production processes.
+            </p>
+          </section>
+  
+          <section name="requirements" id="requirements">
+            <h2>Terms & Requirements</h2>
+
+            <h3>What We Offer</h3>
+            <ul>
+              <li>Friendly and supportive team</li>
+              <li>Calm and stress-free training process</li>
+              <li>Manageable workload</li>
+              <li>Fair treatment and respect in the workplace</li>
+              <li>Opportunity to grow with the company</li>
+            </ul>
+
+            <h3>What We Expect</h3>
+            <ul>
+              <li>Willingness to work and learn</li>
+              <li>Good communication skills</li>
+              <li>Team spirit and reliability</li>
+              <li>Basic understanding of the tasks (training provided)</li>
+            </ul>
+
+            <p>We would be very happy to receive your application and look forward to welcoming new members to our team.</p>
+          </section>
+
+        </div>
+
+        <section name="products" id="products">
+          <h2>Products</h2>
+
+          <div class="swiper3-row">
+            <h3>Creams and fillings</h3>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><span>Melting stirrers</span><img src="./IMG/Creams/Creams (1).png"/></div>
+                <div class="swiper-slide"><span>Cream cooker</span><img src="./IMG/Creams/Creams (2).png"/></div>
+                <div class="swiper-slide"><span>Food and cream warmer</span><img src="./IMG/Creams/Creams (3).png"/></div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+
+          <div class="swiper3-row">
+            <h3>Fried goods</h3>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><span>Donut fryer automats</span><img src="./IMG/Bakery/Bakery (1).png"/></div>
+                <div class="swiper-slide"><span>Frying systems</span><img src="./IMG/Bakery/Bakery (2).png"/></div>
+                <div class="swiper-slide"><span>Donut fryer</span><img src="./IMG/Bakery/Bakery (3).png"/></div>
+                <div class="swiper-slide"><span>Donut fryer</span><img src="./IMG/Bakery/Bakery (4).png"/></div>
+                <div class="swiper-slide"><span>Combined loading system</span><img src="./IMG/Bakery/Bakery (5).png"/></div>
+                <div class="swiper-slide"><span>Yeast dough loading machine</span><img src="./IMG/Bakery/Bakery (6).png"/></div>
+                <div class="swiper-slide"><span>Spritzkuchen loading machine</span><img src="./IMG/Bakery/Bakery (7).png"/></div>
+                <div class="swiper-slide"><span>Sugar roundel</span><img src="./IMG/Bakery/Bakery (8).png"/></div>
+                <div class="swiper-slide"><span>Exhaust hoods</span><img src="./IMG/Bakery/Bakery (9).png"/></div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+
+          <div class="swiper3-row">
+            <h3>Pretzels and snack</h3>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><span>Leaching machines</span><img src="./IMG/Snacks/Snacks (1).png"/></div>
+                <div class="swiper-slide"><span>Pretzel baking oven</span><img src="./IMG/Snacks/Snacks (2).png"/></div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+
+        </section>
+
+        <section name="contact" id="contact" class="contact">
+          <h2>Contact</h2>
+          <p>
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 9C5.5 5.13 8.63 2 12.5 2C16.37 2 19.5 5.13 19.5 9C19.5 13.17 15.08 18.92 13.27 21.11C12.87 21.59 12.14 21.59 11.74 21.11C9.92 18.92 5.5 13.17 5.5 9ZM10 9C10 10.38 11.12 11.5 12.5 11.5C13.88 11.5 15 10.38 15 9C15 7.62 13.88 6.5 12.5 6.5C11.12 6.5 10 7.62 10 9Z" fill="#78943D"></path>
+            </svg> Am Funkturm 21, D-29525 Uelzen
+          </p>
+
+          <p>
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.05313 6.77719C4.16024 6.30782 4.42357 5.88874 4.79998 5.58858C5.17639 5.28842 5.64356 5.12497 6.125 5.125H18.875C19.3564 5.12497 19.8236 5.28842 20.2 5.58858C20.5764 5.88874 20.8398 6.30782 20.9469 6.77719L12.5 11.9399L4.05313 6.77719ZM4 7.99056V15.5386L10.1657 11.7582L4 7.99056ZM11.1836 12.3819L4.20294 16.6606C4.37541 17.0242 4.64762 17.3315 4.98789 17.5465C5.32816 17.7615 5.7225 17.8754 6.125 17.875H18.875C19.2774 17.8751 19.6716 17.7609 20.0117 17.5457C20.3518 17.3305 20.6238 17.0232 20.796 16.6595L13.8154 12.3808L12.5 13.1851L11.1836 12.3819ZM14.8343 11.7593L21 15.5386V7.99056L14.8343 11.7582V11.7593Z" fill="#78943D"></path>
+            </svg>
+            <a href="mailto:info@heim-geraetebau.de" style="color: white; text-decoration: none;">info@heim-geraetebau.de</a>
+          </p>
+
+          <p>
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.73 15.2598L17.19 14.9698C16.58 14.8998 15.98 15.1098 15.55 15.5398L13.71 17.3798C10.88 15.9398 8.56004 13.6298 7.12004 10.7898L8.97004 8.93977C9.40004 8.50977 9.61004 7.90977 9.54004 7.29977L9.25004 4.77977C9.13004 3.76977 8.28004 3.00977 7.26004 3.00977H5.53004C4.40004 3.00977 3.46004 3.94977 3.53004 5.07977C4.06004 13.6198 10.89 20.4398 19.42 20.9698C20.55 21.0398 21.49 20.0998 21.49 18.9698V17.2398C21.5 16.2298 20.74 15.3798 19.73 15.2598Z" fill="#78943D"></path>
+            </svg>
+            +49 581 2115730
+          </p>
+
+          <p>
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 3H17.5C18.05 3 18.5 3.45 18.5 4V6C18.5 6.55 18.05 7 17.5 7H7.5C6.95 7 6.5 6.55 6.5 6V4C6.5 3.45 6.95 3 7.5 3ZM5.5 8H19.5C21.16 8 22.5 9.34 22.5 11V15C22.5 16.1 21.6 17 20.5 17H18.5V19C18.5 20.1 17.6 21 16.5 21H8.5C7.4 21 6.5 20.1 6.5 19V17H4.5C3.4 17 2.5 16.1 2.5 15V11C2.5 9.34 3.84 8 5.5 8ZM9.5 19H15.5C16.05 19 16.5 18.55 16.5 18V14H8.5V18C8.5 18.55 8.95 19 9.5 19ZM19.5 12C18.95 12 18.5 11.55 18.5 11C18.5 10.45 18.95 10 19.5 10C20.05 10 20.5 10.45 20.5 11C20.5 11.55 20.05 12 19.5 12Z" fill="#78943D"></path>
+            </svg>
+            +49 581 21157321
+          </p>
+
+          <p>
+            <a class="some-link" href="https://www.facebook.com/Heimgeraetebau">
+            <svg width="25" height="24" viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.1144 21H4.49346C3.94463 21 3.5 20.5551 3.5 20.0065V3.99345C3.5 3.44469 3.9447 3 4.49346 3H20.5066C21.0552 3 21.5 3.44469 21.5 3.99345V20.0065C21.5 20.5552 21.0552 21 20.5066 21H15.9197V14.0294H18.2594L18.6098 11.3128H15.9197V9.57849C15.9197 8.79198 16.1381 8.256 17.266 8.256L18.7045 8.25537V5.82566C18.4557 5.79255 17.6018 5.71859 16.6083 5.71859C14.5343 5.71859 13.1144 6.98457 13.1144 9.30945V11.3128H10.7687V14.0294H13.1144V21Z"></path>
+            </svg></a>
+
+            <a class="some-link" href="https://www.youtube.com/@JUFEBA">
+            <svg width="25" height="24" viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.6045 6.96979C21.1439 7.53063 21.32 8.80424 21.32 8.80424C21.32 8.80424 21.5 10.3002 21.5 11.7956V13.198C21.5 14.694 21.32 16.1894 21.32 16.1894C21.32 16.1894 21.1439 17.463 20.6045 18.0239C19.9878 18.6873 19.3039 18.7559 18.9174 18.7946C18.8749 18.7989 18.836 18.8028 18.8011 18.8071C16.2822 18.9942 12.5 19 12.5 19C12.5 19 7.82 18.9561 6.38 18.814C6.31177 18.8009 6.22907 18.7907 6.13541 18.7792C5.67928 18.723 4.96335 18.6348 4.39494 18.0239C3.8555 17.463 3.68 16.1894 3.68 16.1894C3.68 16.1894 3.5 14.694 3.5 13.198V11.7956C3.5 10.3002 3.68 8.80424 3.68 8.80424C3.68 8.80424 3.8555 7.53063 4.39494 6.96979C5.01305 6.30538 5.69754 6.23757 6.08411 6.19928C6.12602 6.19513 6.16443 6.19132 6.19887 6.18714C8.71775 6 12.4961 6 12.4961 6H12.5039C12.5039 6 16.2822 6 18.8011 6.18714C18.8356 6.19133 18.874 6.19514 18.9159 6.1993C19.3022 6.2376 19.987 6.30549 20.6045 6.96979ZM10.6409 9.70414L10.6415 14.8973L15.5043 12.3097L10.6409 9.70414Z">
+            </path></svg></a>
+          </p>
+        </div>        
+
+
+
+      </div>
+
+      <script>
+        new Swiper('.swiper', {
+          loop: true,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+
+        const about_us_btn = document.getElementById("about_us_btn");
+        const requirements_btn = document.getElementById("requirements_btn");
+        const products_btn = document.getElementById("products_btn");
+        const contact_btn = document.getElementById("contact_btn");
+
+        const about_us = document.getElementById("about_us");
+        const requirements = document.getElementById("requirements");
+        const products = document.getElementById("products");
+        const contact = document.getElementById("contact");
+
+        function shadowOn(element) {
+          element.style.filter = "drop-shadow(0px 0px 10px white)";
+        }
+        function shadowOff(element) {
+          element.style.filter = "none";
+        }
+        function show(element) {
+          shadowOn(element);
+          setTimeout(() => shadowOff(element), 1000);
+        }
+
+        about_us_btn.addEventListener("click", () => show(about_us));
+        requirements_btn.addEventListener("click", () => show(requirements));
+        products_btn.addEventListener("click", () => show(products));
+        contact_btn.addEventListener("click", () => show(contact));
+        
+      </script>
+  </body>
+</html>
